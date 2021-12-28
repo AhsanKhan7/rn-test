@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {ScrollView, Text, Image, View} from 'react-native';
 import styles from './ShopStyles';
+import Header from '../../Components/Header/Header';
 import Products from './Products';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {Searchbar} from 'react-native-paper';
@@ -29,6 +30,7 @@ const Shop = () => {
 
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.shop}>
+      <Header headerName="Shop" />
       <View>
         <Image source={headerImage} style={styles.topImg} />
       </View>
